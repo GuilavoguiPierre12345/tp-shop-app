@@ -1,0 +1,25 @@
+footer {
+
+}
+
+.footer-content {
+    background-color: forestgreen;
+    height: calc(100vh - 70vh - 80px);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    gap: 25px;
+}
+
+@media screen and (max-width : 670px) {
+    .footer-content {
+        height: auto;
+        font-size: 1rem;
+        flex-wrap: wrap;
+    }
+
+}

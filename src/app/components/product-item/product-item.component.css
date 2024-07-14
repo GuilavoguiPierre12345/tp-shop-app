@@ -1,0 +1,34 @@
+.product-item:hover{
+    background-color: #1d1d1d;
+    color: white;
+}
+
+.product-item {
+    height: 500px;
+    width: 300px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.product-item .product-image img{
+    border-radius: 2px;
+    width: 100%;
+    height: 350px;
+}
+
+.product-item .product-details .product-price {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+@media screen and (max-width : 450px) {
+    .product-item {
+
+    }
+
+    .product-item .product-image img {
+        
+    }
+
+}

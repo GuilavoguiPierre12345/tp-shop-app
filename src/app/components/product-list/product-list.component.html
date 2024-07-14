@@ -1,0 +1,8 @@
+<div class="product-list">
+    @for (product of productList; track $index) {
+        <app-product-item (displayProductViewModal)="handleDisplayProductViewModal($event)" [product]="product"></app-product-item>
+    }
+    
+    <!-- product view modal -->
+     <app-modal-product-view [product]="targetProduct" *ngIf="isDisplayModal" (closeDisplayModal)="handleCloseDisplayModal($event)" ></app-modal-product-view>
+</div>

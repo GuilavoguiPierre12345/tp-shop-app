@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* creation des classe personnalisees */
+
+.flex {
+    display: flex;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
+.flex-2 {
+    flex: 2;
+}
+
+.flex-3 {
+    flex: 3;
+}
+
+.aic {
+    align-items: center;
+}
+
+.jcc {
+    justify-content: center;
+}
+
+.coloum {
+    flex-direction: column;
+}
+
+.btn {
+    outline: none;
+    height: 40px;
+    min-width: 100px;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    left: 84.6%;
+}
+
+@media screen and (max-width : 650px) {
+    .btn {
+        left: 75%;
+    }
+}

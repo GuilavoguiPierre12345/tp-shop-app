@@ -1,0 +1,21 @@
+<div class="modal-product-view">
+    <div class="overlay">
+
+    </div>
+    <div class="modal-product-view-container flex">
+        <div class="modal-product-view-image flex-1">
+            <img src="images/products/{{product.image}}" alt="">
+        </div>
+        <div class="modal-product-view-details flex-1 flex aic jcc coloum">
+            <h2>{{product.name}}</h2>
+            <div class="modal-product-view-details-price">
+                <h3>{{product.nprice}}</h3>
+                <del>
+                    <h3>{{product.oprice}}</h3>
+                </del>
+            </div>
+            <!-- le bouton de fermeture -->
+             <button (click)="closeDisplayProductViewModal()" class="btn btn-close">X</button>
+        </div>
+    </div>
+</div>
